@@ -3126,5 +3126,65 @@
                <field type="uint8_t" name="ind">index of debug variable</field>
                <field type="float" name="value">DEBUG value</field>
           </message>
+<!-- MODIFICA per invio delle matrici-->
+          <message id="230" name="B1_MATRIX">
+               <description></description>
+               <field type="uint64_t" name="time_usec">Timestamp (micros since boot or Unix epoch)</field>
+               <field type="float[50]" name="value">B</field>
+          </message>
+          <message id="231" name="B2_MATRIX">
+               <description></description>
+               <field type="uint64_t" name="time_usec">Timestamp (micros since boot or Unix epoch)</field>
+               <field type="float[50]" name="value">B</field>
+          </message>
+          <message id="232" name="BB_TB_I_MATRIX">
+               <description></description>
+               <field type="uint64_t" name="time_usec">Timestamp (micros since boot or Unix epoch)</field>
+               <field type="float[48]" name="value">Bb_tb_i</field>
+          </message>
+          <message id="233" name="BB_TB_I_PINV_MATRIX">
+               <description></description>
+               <field type="uint64_t" name="time_usec">Timestamp (micros since boot or Unix epoch)</field>
+               <field type="float[48]" name="value">Bb_tb_i_pinv</field>
+          </message>
+          <message id="234" name="T_BW_MATRIX">
+               <description></description>
+               <field type="uint64_t" name="time_usec">Timestamp (micros since boot or Unix epoch)</field>
+               <field type="float[12]" name="value">T_bw</field>
+          </message>
+          <message id="235" name="G_MATRIX">
+               <description></description>
+               <field type="uint64_t" name="time_usec">Timestamp (micros since boot or Unix epoch)</field>
+               <field type="float[10]" name="value">g</field>
+          </message>
+          <message id="236" name="CSI_R_MATRIX">
+               <description></description>
+               <field type="uint64_t" name="time_usec">Timestamp (micros since boot or Unix epoch)</field>
+               <field type="float[11]" name="value">csi_r</field>
+          </message>
+          <message id="237" name="CSI_DOT_R_MATRIX">
+               <description></description>
+               <field type="uint64_t" name="time_usec">Timestamp (micros since boot or Unix epoch)</field>
+               <field type="float[11]" name="value">csi_dot_r</field>
+          </message>
+          <message id="238" name="CSI_MATRIX">
+               <description></description>
+               <field type="uint64_t" name="time_usec">Timestamp (micros since boot or Unix epoch)</field>
+               <field type="float[11]" name="value">csi</field>
+          </message>
+          <message id="239" name="CSI_DOT_MATRIX">
+               <description></description>
+               <field type="uint64_t" name="time_usec">Timestamp (micros since boot or Unix epoch)</field>
+               <field type="float[11]" name="value">csi_dot</field>
+          </message>
+          <message id="240" name="POLIMI_ATTITUDE_NED">
+               <description></description>
+               <field type="uint64_t" name="time_usec">Timestamp (micros since boot or Unix epoch)</field>
+               <field type="float" name="value">x</field>
+	       <field type="float" name="value">y</field>
+	       <field type="float" name="value">z</field>
+	       <field type="float" name="value">w</field>
+          </message>
+<!-- FINE MODIFICA-->
      </messages>
 </mavlink>
