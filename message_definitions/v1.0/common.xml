@@ -3180,10 +3180,10 @@
           <message id="240" name="POLIMI_ATTITUDE_NED">
                <description></description>
                <field type="uint64_t" name="time_usec">Timestamp (micros since boot or Unix epoch)</field>
-               <field type="float" name="value">x</field>
-	       <field type="float" name="value">y</field>
-	       <field type="float" name="value">z</field>
-	       <field type="float" name="value">w</field>
+               <field type="float" name="x">x</field>
+	       <field type="float" name="y">y</field>
+	       <field type="float" name="z">z</field>
+	       <field type="float" name="w">w</field>
           </message>
 <!-- FINE MODIFICA-->
      </messages>
