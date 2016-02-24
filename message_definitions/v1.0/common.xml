@@ -3127,6 +3127,11 @@
                <field type="float" name="value">DEBUG value</field>
           </message>
 <!-- MODIFICA per invio delle matrici-->
+          <message id="229" name="BT_TB_I_MATRIX">
+               <description></description>
+               <field type="uint64_t" name="time_usec">Timestamp (micros since boot or Unix epoch)</field>
+               <field type="float[16]" name="value">Bt_tb_i</field>
+          </message>
           <message id="230" name="B1_MATRIX">
                <description></description>
                <field type="uint64_t" name="time_usec">Timestamp (micros since boot or Unix epoch)</field>
